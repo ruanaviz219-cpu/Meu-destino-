@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>MeuDestino</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="description" content="MeuDestino: encontre imóveis perto de onde você precisa estar.">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="MeuDestino">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png">
+<link rel="apple-touch-icon" href="./apple-touch-icon.png">
+<style>html,body{margin:0;height:100%;overflow:hidden;background:#F4F7FB;overscroll-behavior:none;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}</style>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('./sw.js').catch(function(e){console.warn('Service worker não registrado:',e&&e.message)})})}</script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{text-decoration:none}
+</style>
+</helmet>
+<div style="width:100%;max-width:430px;height:100vh;height:100dvh;margin:0 auto;box-sizing:border-box;position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;background:linear-gradient(180deg,#EAF3FF 0%,#FFFFFF 55%);font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:#0F1B33">
+<div style="margin-top:18vh;display:flex;flex-direction:column;align-items:center;gap:18px">
+<svg width="92" height="92" viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="10" fill="#1668E3"></rect><path d="M8 16.5L17 9l9 7.5V25a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1z" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"></path><circle cx="17" cy="18" r="2.6" fill="#fff"></circle></svg>
+<h1 style="margin:0;font-size:40px;font-weight:800;letter-spacing:-0.03em">Meu<span style="color:#1668E3">Destino</span></h1>
+</div>
+<p style="margin:18px 40px 0;text-align:center;font-size:18px;line-height:1.45;color:#2B3A55;font-weight:500">Onde você precisa estar.<br>Onde você pode morar.</p>
+<svg viewBox="0 0 390 260" preserveAspectRatio="xMidYMax slice" aria-hidden="true" style="position:absolute;left:0;bottom:0;width:100%;height:270px">
+<path d="M0 205 C60 195 110 215 170 205 C240 192 300 212 390 200 L390 260 L0 260 Z" fill="#BFD9F2"></path>
+<rect x="24" y="120" width="34" height="100" fill="#CFE0F7"></rect>
+<rect x="64" y="90" width="42" height="130" fill="#B6CFF0"></rect>
+<rect x="112" y="140" width="30" height="80" fill="#CFE0F7"></rect>
+<rect x="150" y="70" width="46" height="150" fill="#9DBEE8"></rect>
+<rect x="202" y="110" width="36" height="110" fill="#B6CFF0"></rect>
+<rect x="246" y="130" width="40" height="90" fill="#CFE0F7"></rect>
+<rect x="292" y="84" width="38" height="136" fill="#B6CFF0"></rect>
+<rect x="336" y="126" width="34" height="94" fill="#CFE0F7"></rect>
+<path d="M0 222 L390 222 L390 260 L0 260 Z" fill="#9DBEE8"></path>
+</svg>
+<div style="position:absolute;left:24px;right:24px;bottom:calc(56px + env(safe-area-inset-bottom))">
+<a href="app.html" style="display:flex;align-items:center;justify-content:center;height:56px;border-radius:16px;background:#1668E3;color:#fff;font-size:17px;font-weight:700;box-shadow:0 6px 18px rgba(22,104,227,0.35)">Começar</a>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {};
+  }
+}
+</script>
+</body>
+</html>
